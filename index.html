@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Motorista</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="form-container">
+            <h1>Cadastro de Motorista</h1>
+            <form id="driverForm">
+                <label for="driver">Motorista:</label>
+                <input type="text" id="driver" name="driver" required>
+                
+                <label for="phone">Telefone:</label>
+                <input type="text" id="phone" name="phone" required>
+                
+                <label for="owner">Frotista (Proprietário):</label>
+                <input type="text" id="owner" name="owner" required>
+                
+                <button type="button" id="submitBtn">Adicionar à Planilha</button>
+                <button type="button" id="clearBtn">Limpar</button>
+            </form>
+            <button id="viewListBtn">Ver Listagem</button>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
